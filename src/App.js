@@ -7,7 +7,7 @@ import {
   validateCep,
 } from "./utils/regex"
 
-function App() {
+export function App() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -80,7 +80,7 @@ function App() {
           value={cep}
           onChange={(e) => setCep(e.target.value)}
         ></input>
-        {cepErr && <p> Digite um CEP válido </p>}
+        {cepErr && <p>Digite um CEP válido</p>}
 
         <button onClick={validate}>Send</button>
       </form>
