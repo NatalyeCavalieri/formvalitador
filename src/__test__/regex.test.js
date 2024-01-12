@@ -3,7 +3,8 @@ import { validateName, validateEmail, validatePhone, validateCep } from '../util
 describe('Testes para expressões regulares de validações', ()=>{
   test('Validação de nome', ()=>{
     expect(validateName.test('Natalye Gaçalã')).toBeTruthy()
-    expect(validateName.test("1234")).toBeFalsy()
+    expect(validateName.test('1234')).toBeFalsy()
+    expect(validateName.test('Natalye12')).toBe(false)
   })
 
   test('Validação de email', ()=>{

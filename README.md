@@ -1,5 +1,5 @@
 <h1 align= "center">Form Validator</h1>
-<img align= "center" src="">
+<img align= "center" src="./src/assets/validator.png">
 
    > Status: Completed ✔️ OR developing 
 

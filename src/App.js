@@ -56,7 +56,7 @@ export function App() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         ></input>
-        {nameErr && <p>Digite seu nome</p>}
+        {nameErr && <p>Enter a valid name (up to 50 characters)</p>}
 
         <input
           type="text"
@@ -64,7 +64,7 @@ export function App() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
-        {emailErr && <p>Digite um email válido</p>}
+        {emailErr && <p>Enter a valid email address</p>}
 
         <input
           type="text"
@@ -72,15 +72,15 @@ export function App() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         ></input>
-        {phoneErr && <p>Digite um número de telefone válido</p>}
+        {phoneErr && <p>Enter a valid phone number</p>}
 
         <input
           type="number"
-          placeholder="CEP"
+          placeholder="Postal code"
           value={cep}
           onChange={(e) => setCep(e.target.value)}
         ></input>
-        {cepErr && <p>Digite um CEP válido</p>}
+        {cepErr && <p>Enter a valid zip code</p>}
 
         <button onClick={validate}>Send</button>
       </form>

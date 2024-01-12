@@ -16,15 +16,17 @@ describe("Teste para o componente App", () => {
     fireEvent.change(screen.getByPlaceholderText("Number phone"), {
       target: { value: "11959728253" },
     })
-    fireEvent.change(screen.getByPlaceholderText("CEP"), {
+    fireEvent.change(screen.getByPlaceholderText("Postal code"), {
       target: { value: "08696060" },
     })
 
     fireEvent.click(screen.getByText("Send"))
 
-    expect(screen.queryByText("Digite seu nome")).toBeNull()
-    expect(screen.queryByText("Digite um email válido")).toBeNull()
-    expect(screen.queryByText("Digite um número de telefone válido")).toBeNull()
-    expect(screen.queryByText("Digite um CEP válido")).toBeNull()
+    expect(
+      screen.queryByText("Enter a valid name (up to 50 characters)")
+    ).toBeNull()
+    expect(screen.queryByText("Enter a valid email address")).toBeNull()
+    expect(screen.queryByText("Enter a valid phone number")).toBeNull()
+    expect(screen.queryByText("Enter a valid zip code")).toBeNull()
   })
 })

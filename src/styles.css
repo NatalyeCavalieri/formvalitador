@@ -10,13 +10,8 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: rgb(167, 226, 227);
-  background: radial-gradient(
-    circle,
-    rgba(167, 226, 227, 1) 0%,
-    rgba(162, 219, 220, 1) 0%,
-    rgba(50, 66, 64, 1) 100%
-  );
+  background: rgb(255,236,139);
+background: radial-gradient(circle, rgba(255,236,139,1) 0%, rgba(255,236,139,1) 0%, rgba(121,118,100,1) 100%);
 }
 
 form {
@@ -27,10 +22,21 @@ form {
 }
 
 #app {
-  border: 1px solid #4c6663;
+  border: 1px solid rgb(59, 59, 58);
   border-radius: 50px;
-  background-color: #4c6663;
+  background-color: rgb(59, 59, 58);
   padding: 50px;
+  transition: background-color 2s ease-out;
+  box-shadow: 10px 14px 5px 0px rgba(3,3,2,0.6);
+-webkit-box-shadow: 10px 14px 5px 0px rgba(3,3,2,0.6);
+-moz-box-shadow: 10px 14px 5px 0px rgba(3,3,2,0.6);
+}
+
+#app:hover{
+  background-color: rgb(65, 65, 53) ;
+  border: 1px solid rgb(65, 65, 53);
+  
+
 }
 
 h1 {
@@ -38,7 +44,7 @@ h1 {
   margin-bottom: 80px;
   justify-content: center;
   font-family: "Bungee Spice", sans-serif;
-  color: #a7e2e3;
+  color: rgb(255, 236, 139);
 }
 
 input {
@@ -46,12 +52,12 @@ input {
   border: none;
   border-radius: 8px;
   padding: 10px;
-  background-color: #c8efef;
+  background-color: rgb(242, 235, 201);
   color: #324240;
 }
 
 input:focus {
-  outline: 3px solid #a7e2e3;
+  outline: 3px solid #d3ba3c;
 }
 
 input::placeholder {
@@ -65,7 +71,7 @@ button {
   margin-top: 30px;
   cursor: pointer;
   color: #2c4439;
-  background-color: #80cfa9;
+  background-color: rgb(255, 236, 139);
   font-weight: bold;
 }
 
@@ -74,6 +80,6 @@ button:hover {
 }
 
 p {
-  color: rgb(119, 35, 35);
+  color: rgb(167, 99, 99);
   font-size: 14px;
 }
