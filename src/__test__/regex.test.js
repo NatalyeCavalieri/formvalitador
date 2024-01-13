@@ -18,6 +18,7 @@ describe('Testes para expressões regulares de validações', ()=>{
     expect(validatePhone.test('(11)959728253')).toBeTruthy()
     expect(validatePhone.test('11959728253')).toBeTruthy()
     expect(validatePhone.test("1195972-8253")).toBeTruthy()
+    expect(validatePhone.test("(11)85972-8253")).toBeFalsy()
     expect(validatePhone.test('959728253')).toBeFalsy()
     expect(validatePhone.test('59728253')).toBeFalsy()
   })
