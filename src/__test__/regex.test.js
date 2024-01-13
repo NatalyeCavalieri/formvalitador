@@ -26,7 +26,8 @@ describe("Tests for regular expression validations", () => {
   test("Postal code validation", () => {
     expect(validateCep.test("08696060")).toBeTruthy()
     expect(validateCep.test("08696-060")).toBeTruthy()
-    expect(validateCep.test("123")).toBeFalsy()
+    expect(validateCep.test("08696-0600")).toBeFalsy()
+    expect(validateCep.test("086960600")).toBeFalsy()
   })
 })
 
