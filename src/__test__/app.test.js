@@ -3,8 +3,8 @@ import { render, fireEvent, queryByText, screen } from "@testing-library/react"
 import "@testing-library/jest-dom/matchers"
 import { App } from "../App"
 
-describe("Teste para o componente App", () => {
-  test("Validação do formulário", () => {
+describe("Test for the App component", () => {
+  test("Form validation", () => {
     const { getByTestId, getByPlaceholderText } = render(<App />)
 
     fireEvent.change(screen.getByPlaceholderText("Full name"), {
